@@ -185,6 +185,7 @@ Tags _$TagsFromJson(Map<String, dynamic> json) => Tags(
       language: json['language'] as String?,
       handlerName: json['handler_name'] as String?,
       encoder: json['encoder'] as String?,
+      title: json['title'] as String?,
     );
 
 Map<String, dynamic> _$TagsToJson(Tags instance) => <String, dynamic>{
@@ -195,4 +196,5 @@ Map<String, dynamic> _$TagsToJson(Tags instance) => <String, dynamic>{
       'language': instance.language,
       'handler_name': instance.handlerName,
       'encoder': instance.encoder,
+      'title': instance.title,
     };
